@@ -1,379 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Library</title>
+  <title>TReact Clone</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
-  <script src="index.js"></script>
 </head>
-
 <body>
-  <section id="landing">
-    <nav>
-      <div class="nav__container">
-        <img class="logo" src="./assets/Library.svg" alt="">
-        <ul class="nav__links">
-          <li><a href="#" class="nav__link">Home</a></li>
-          <li><a href="#" class="nav__link">Contact</a></li>
-          <li><a href="#" class="nav__link nav__link--primary">Books</a></li>
-        </ul>
-        <button class="btn__menu" onclick="openMenu()">
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="menu__backdrop">
-          <button class="btn__menu btn__menu--close" onclick="closeMenu()">
-            <i class="fas fa-times"></i>
-          </button>
-          <ul class="menu__links">
-            <li class="menu__list">
-              <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
-            </li>
-            <li class="menu__list">
-              <a href="#features" class="menu__link" onclick="closeMenu()">Books</a>
-            </li>
-            <li class="menu__list">
-              <a class="menu__link no-cursor" onclick="closeMenu()">Contacts</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <header>
-      <div class="header__container">
-        <div class="header__description">
-          <h1>America's most awarded online library platform</h1>
-          <h2>Find your dream book with <span class="purple">Library</span></h2>
-          <a href="#features">
-            <button class="btn">Browse books</button>
-          </a>
-        </div>
-        <figure class="header__img--wrapper">
-          <img src="./assets/Undraw_Books.svg" alt="">
-        </figure>
-      </div>
-    </header>
-  </section>
 
-  <main>
-    <section id="highlights">
-      <div class="container">
-        <div class="row">
-          <h2 class="section__title">
-            Why choose <span class="purple">Library</span>
-          </h2>
-          <div class="highlight__wrapper">
-            <div class="highlight">
-              <div class="highlight__img">
-                <i class="fas fa-bolt"></i>
-              </div>
-              <h3 class="highlight__subtitle">
-                Easy and Quick
-              </h3>
-              <p class="highlight__para">
-                Get access to the book you purchased online instantly.
-              </p>
-            </div>
-            <div class="highlight">
-              <div class="highlight__img">
-                <i class="fas fa-book-open"></i>
-              </div>
-              <h3 class="highlight__subtitle">
-                10,000+ Books
-              </h3>
-              <p class="highlight__para">
-                Library has books in all your favourite categories.
-              </p>
-            </div>
-            <div class="highlight">
-              <div class="highlight__img">
-                <i class="fas fa-tags"></i>
-              </div>
-              <h3 class="highlight__subtitle">
-                Affordable
-              </h3>
-              <p class="highlight__para">
-                Get your hands on popular books for as little as $10.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+<!-- NAV -->
+<nav class="nav">
+  <div class="row">
+    <div class="nav__logo">
+      <img src="assets/logo-light.d9a5d1b5be5ea077b26864fdfc2e96a4.svg" alt="TReact Logo" width="120">
+    </div>
 
-    <section id="features">
-      <div class="container">
-        <div class="row">
-          <h2 class="section__title">
-            Featured <span class="purple">Books</span>
-          </h2>
-          <div class="books">
-            <div class="book">
-              <figure class="book__img--wrapper">
-                <img class="book__imgcrack the coding interview.png" src="./assets/crack the coding interview.png" alt="">
-              </figure>
-              <div class="book__title">
-                Crack the Coding Interview
-              </div>
-              <div class="book__ratings">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-              </div>
-              <div class="book__price">
-                <span class="book__price--normal">$59.95</span> $14.95
-              </div>
-            </div>
-            <div class="book">
-              <figure class="book__img--wrapper">
-                <img class="book__img" src="./assets/atomic habits.jpg" alt="">
-              </figure>
-              <div class="book__title">
-                Atomic Habits
-              </div>
-              <div class="book__ratings">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-              </div>
-              <div class="book__price">
-                <span class="book__price--normal">$59.95</span> $14.95
-              </div>
-            </div>
-            <div class="book">
-              <figure class="book__img--wrapper">
-                <img class="book__img" src="./assets/david goggins.jpeg" alt="">
-              </figure>
-              <div class="book__title">
-                Can't Hurt Me
-              </div>
-              <div class="book__ratings">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-              </div>
-              <div class="book__price">
-                <span class="book__price--normal">$59.95</span> $14.95
-              </div>
-            </div>
-            <div class="book">
-              <figure class="book__img--wrapper">
-                <img class="book__img" src="./assets/deep work.jpeg" alt="">
-              </figure>
-              <div class="book__title">
-                Deep Work
-              </div>
-              <div class="book__ratings">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-              </div>
-              <div class="book__price">
-                <span class="book__price--normal">$59.95</span> $14.95
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <ul class="nav__links">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+</nav>
 
-    <section id="recent">
-      <div class="container">
-        <div class="row">
-          <h2 class="section__title">
-            Featured <span class="purple">Books</span>
-          </h2>
-          <div class="books">
-            <div class="book">
-              <figure class="book__img--wrapper">
-                <img class="book__img" src="./assets/book-1.jpeg" alt="">
-              </figure>
-              <div class="book__title">
-                The 10X Rule
-              </div>
-              <div class="book__ratings">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-              </div>
-              <div class="book__price">
-                <span class="book__price--normal">$59.95</span> $14.95
-              </div>
-            </div>
-            <div class="book">
-              <figure class="book__img--wrapper">
-                <img class="book__img" src="./assets/book-2.jpeg" alt="">
-              </figure>
-              <div class="book__title">
-                Be Obsessed Or Be Average
-              </div>
-              <div class="book__ratings">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-              </div>
-              <div class="book__price">
-                <span class="book__price--normal">$59.95</span> $14.95
-              </div>
-            </div>
-            <div class="book">
-              <figure class="book__img--wrapper">
-                <img class="book__img" src="./assets/book-3.jpeg" alt="">
-              </figure>
-              <div class="book__title">
-                Rich Dad Poor Dad
-              </div>
-              <div class="book__ratings">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-              </div>
-              <div class="book__price">
-                <span class="book__price--normal">$59.95</span> $14.95
-              </div>
-            </div>
-            <div class="book">
-              <figure class="book__img--wrapper">
-                <img class="book__img" src="./assets/book-4.jpeg" alt="">
-              </figure>
-              <div class="book__title">
-                Cashflow Quadrant
-              </div>
-              <div class="book__ratings">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-              </div>
-              <div class="book__price">
-                <span class="book__price--normal">$59.95</span> $14.95
-              </div>
-            </div>
-            <div class="book">
-              <figure class="book__img--wrapper">
-                <img class="book__img" src="./assets/book-5.jpeg" alt="">
-              </figure>
-              <div class="book__title">
-                48 Laws of Power
-              </div>
-              <div class="book__ratings">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-              </div>
-              <div class="book__price">
-                <span class="book__price--normal">$59.95</span> $14.95
-              </div>
-            </div>
-            <div class="book">
-              <figure class="book__img--wrapper">
-                <img class="book__img" src="./assets/book-6.jpeg" alt="">
-              </figure>
-              <div class="book__title">
-                The 5 Second Rule
-              </div>
-              <div class="book__ratings">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-              </div>
-              <div class="book__price">
-                <span class="book__price--normal">$59.95</span> $14.95
-              </div>
-            </div>
-            <div class="book">
-              <figure class="book__img--wrapper">
-                <img class="book__img" src="./assets/book-7.jpg" alt="">
-              </figure>
-              <div class="book__title">
-                Your Next Five Moves
-              </div>
-              <div class="book__ratings">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-              </div>
-              <div class="book__price">
-                <span class="book__price--normal">$59.95</span> $14.95
-              </div>
-            </div>
-            <div class="book">
-              <figure class="book__img--wrapper">
-                <img class="book__img" src="./assets/book-8.jpeg" alt="">
-              </figure>
-              <div class="book__title">
-                Mastery
-              </div>
-              <div class="book__ratings">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-              </div>
-              <div class="book__price">
-                <span class="book__price--normal">$59.95</span> $14.95
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+<main>
 
-    <section id="explore">
-      <div class="container">
-        <div class="row row__column">
-          <h2>Explore more <span class="purple">Books</span></h2>
-          <a href="#features">
-            <button class="btn">Browse books</button>
-          </a>
-        </div>
-      </div>
-    </section>
-  </main>
+<!-- HERO -->
+<section class="container">
+  <div class="row">
+    <div class="column-40">
+      <h2>Beautiful React Templates for you.</h2>
+      <p>Our templates are easy to setup, understand and customize.</p>
+      <button>Get Started</button>
+    </div>
 
-  <footer>
-    <div class="container">
-      <div class="row row__column">
-        <a href="#">
-          <figure class="footer__logo">
-            <img src="./assets/Library.svg" class="footer__logo--img" alt="">
-          </figure>
-        </a>
-        <div class="footer__list">
-          <a href="#" class="footer__link">Home</a>
-          <a class="footer__link no-cursor">About</a>
-          <a href="#features" class="footer__link">Books</a>
-          <a class="footer__link no-cursor">Contact</a>
-        </div>
-        <div class="footer__copyright">Copyright &copy; 2021 Library</div>
+    <div class="column-60">
+      <img src="assets/hero-screenshot-1.40a097b525c2f8c9808e.png" alt="Dashboard preview">
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="container">
+  <div class="row services">
+
+    <div class="service">
+      <img src="assets/fast-icon.dbb971a73d4805d2fc3bcdacdb55beba.svg" alt="Fast">
+      <div class="service__description">
+        <h3>Fast</h3>
+        <p>Lightning fast load times.</p>
       </div>
     </div>
-  </footer>
-</body>
 
+    <div class="service">
+      <img src="assets/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg" alt="Secure">
+      <div class="service__description">
+        <h3>Secure</h3>
+        <p>Top-level security features.</p>
+      </div>
+    </div>
+
+    <div class="service">
+      <img src="assets/support-icon.f9253ffa8cb6ffde5bbaa05eb5136375.svg" alt="Support">
+      <div class="service__description">
+        <h3>Support</h3>
+        <p>24/7 customer support.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SECOND HERO / FEATURE -->
+<section class="container">
+  <div class="row">
+    <div class="column-50">
+      <img src="assets/hero-screenshot-2.241aac1fbc66db29d873.png" alt="Feature preview">
+    </div>
+
+    <div class="column-50">
+      <h2>Designed for modern teams</h2>
+      <p>Everything you need to build amazing websites.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PLANS -->
+<section class="container">
+  <div class="row plans">
+
+    <div class="plan">
+      <h3>Basic</h3>
+      <img src="assets/simple-icon.673b7e1750b2a4ef32907fc164828d00.svg" alt="Basic Plan">
+      <p>$10/month</p>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="plan">
+      <h3>Pro</h3>
+      <img src="assets/customize-icon.367468c90fd796009b97fbfba67b2c6a.svg" alt="Pro Plan">
+      <p>$20/month</p>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="plan">
+      <h3>Enterprise</h3>
+      <img src="assets/reliable-icon.1367510a8f0a1bec76dc425d25f92f43.svg" alt="Enterprise Plan">
+      <p>$50/month</p>
+      <button>Buy Now</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- LINKS -->
+<section class="container">
+  <div class="row links">
+
+    <div class="link">
+      <h4>Main</h4>
+      <p>Blog</p>
+      <p>FAQs</p>
+      <p>Support</p>
+    </div>
+
+    <div class="link">
+      <h4>Product</h4>
+      <p>Log In</p>
+      <p>Personal</p>
+      <p>Business</p>
+    </div>
+
+    <div class="link">
+      <h4>Press</h4>
+      <p>Logos</p>
+      <p>Events</p>
+      <p>Stories</p>
+    </div>
+
+    <div class="link">
+      <h4>Team</h4>
+      <p>Careers</p>
+      <p>Founders</p>
+      <p>Culture</p>
+    </div>
+
+    <div class="link">
+      <h4>Legal</h4>
+      <p>Privacy</p>
+      <p>Terms</p>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer__info">
+  <div class="row">
+    <img src="assets/customers-logo-strip.680ac7c2e8ae28161d2c.png" alt="Footer Logo" width="100">
+    <p>© 2026 TReact Inc.</p>
+  </div>
+</footer>
+
+</body>
 </html>
